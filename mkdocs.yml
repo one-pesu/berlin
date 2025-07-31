@@ -1,0 +1,55 @@
+site_name: Leaving Barovia
+
+repo_name: leaving-barovia
+repo_url: https://github.com/one-pesu/berlin
+
+nav:
+  - 1962-12-22.md
+  - 1962-12-28.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.details
+  - pymdownx.snippets
+
+theme:
+  name: material
+  language: en
+
+  icon:
+    repo: fontawesome/brands/github
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.tracking
+    - search
+    - search.suggest
+    - search.share
+
+plugins:
+  - search:
+      lang: en
