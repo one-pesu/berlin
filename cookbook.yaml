@@ -1,0 +1,13 @@
+$globals:
+  version: "8.1"
+
+leavingBarovia.pdf:
+  requires:
+    - leavingBarovia.tex
+    - chapters
+  commands:
+    - xelatex leavingBarovia.tex
+
+chapters:
+  exists_only: true
+  recursive: true

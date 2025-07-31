@@ -1,0 +1,20 @@
+\documentclass[12pt,a4paper]{memoir}
+\usepackage{fmtcount}
+\usepackage{fontspec}
+\newfontfamily\fraktur{UnifrakturMaguntia}
+\newcommand{\autoChapter}{
+  \chapter{Chapter \Numberstring{chapter}}
+}
+
+\copypagestyle{mynostyle}{plain}
+\pagestyle{mynostyle}
+\setmainfont{Georgia}
+
+\begin{document}
+
+\frontmatter
+\tableofcontents
+
+\mainmatter
+
+\end{document}
